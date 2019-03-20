@@ -32,6 +32,7 @@
                         <TextBox HorizontalAlignment="Left" Height="97.376" Margin="208.025,187.669,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="411.899" Text= "{Binding Data, UpdateSourceTrigger=PropertyChanged}"/>
                         <Button Name ="Mine" Click="Button_Click"  Content="Mine" HorizontalAlignment="Left" Height="78.763" Margin="331.451,318.908,0,0" VerticalAlignment="Top" Width="147.644" FontSize="48"/>
                         <TextBlock HorizontalAlignment="Left" Height="20.659" Margin="208.025,127.318,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="411.899" Text ="{Binding PreviousHash}" Background="White"/>
+                        <Button Click="Button_Click_1" Height="20" Width="50" Content="Help" Margin="236.107,344.116,0,0" HorizontalAlignment="Left" VerticalAlignment="Top"/>
                     </Grid>
                 </DataTemplate>
             </TabControl.ContentTemplate>
