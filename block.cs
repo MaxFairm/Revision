@@ -1,6 +1,7 @@
 using System;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
+using System.Linq;
 using System.Runtime.CompilerServices;
 
 namespace TabControlExperiments
@@ -119,5 +120,15 @@ namespace TabControlExperiments
                 Blocks[index + 1].PreviousHash = Blocks[index].Hash;
             }
         }
+
+        public static BlockChain GetInitializedBlockChain()
+        {
+            BlockChain result = new BlockChain();
+            foreach (int i in Enumerable.Range (0, 5))
+                 result.Add(new Block(i.ToString()));
+            return result;
+        }
+        
+            
     }
 }  
