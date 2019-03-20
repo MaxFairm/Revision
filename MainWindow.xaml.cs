@@ -37,6 +37,11 @@ namespace TabControlExperiments
                 Task.Factory.StartNew(B.Mine);
             }
         }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://anders.com/blockchain/");
+        }
     }
 
     /// <summary>
